@@ -19,12 +19,13 @@ public class CaptchaController {
 
     @Autowired
     private CaptchaService captchaService;
+
     @GetMapping(produces = MediaType.IMAGE_PNG_VALUE)
-    public ResponseEntity<Resource> getCaptchaImage(){
+    public ResponseEntity<Resource> getCaptchaImage() {
         CaptchaModel captchaData = captchaService.generateCaptchaImage(null);
-        HttpHeaders httpHeaders=new HttpHeaders();
-        httpHeaders.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=" + "captcha.png");
-        httpHeaders.add("captchaId",captchaData.getId());
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + "captcha.png");
+        httpHeaders.add("captchaId", captchaData.getId());
         httpHeaders.add("Access-Control-Expose-Headers", "captchaId");
         ByteArrayResource resource = new ByteArrayResource(captchaData.getData());
         MediaType mediaType = MediaType.IMAGE_PNG;
