@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 @Data
 public class CaptchaCodeModel {
+    
     private String answer;
     private Long expireAt;
 
