@@ -15,12 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("captcha")
 public class CaptchaController {
-    
+
     @Autowired
     private CaptchaService captchaService;
 
     @GetMapping(produces = MediaType.IMAGE_PNG_VALUE)
     public ResponseEntity<Resource> getCaptchaImage() {
+        
         CaptchaModel captchaData = captchaService.generateCaptchaImage(null);
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.add(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + "captcha.png");
