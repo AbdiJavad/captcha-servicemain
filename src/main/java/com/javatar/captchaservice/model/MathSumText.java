@@ -21,12 +21,13 @@ public class MathSumText implements TextProducer {
             this.text = i + " + " + j + " =";
         }
     }
-    
+
     @Override
     public String getText() {
         return text;
     }
 
+    
     public int getAnswer() {
         return answer;
     }
