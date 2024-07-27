@@ -26,7 +26,6 @@ public class MathSumText implements TextProducer {
     public String getText() {
         return text;
     }
-
     
     public int getAnswer() {
         return answer;
