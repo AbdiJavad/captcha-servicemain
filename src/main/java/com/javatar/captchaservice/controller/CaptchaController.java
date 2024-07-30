@@ -19,8 +19,7 @@ public class CaptchaController {
 
     @Autowired
     private CaptchaService captchaService;
-
-
+    
     @GetMapping(produces = MediaType.IMAGE_PNG_VALUE)
     public ResponseEntity<Resource> getCaptchaImage() {
 
