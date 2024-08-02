@@ -22,6 +22,7 @@ public class MathSumText implements TextProducer {
         }
     }
 
+    
     @Override
     public String getText() {
         return text;
