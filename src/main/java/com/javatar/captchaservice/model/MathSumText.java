@@ -6,7 +6,7 @@ public class MathSumText implements TextProducer {
     private final String text;
     private final int answer;
 
-    
+
     public MathSumText() {
         int i = (int) (Math.random() * 30);
         int j = 0;
