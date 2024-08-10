@@ -22,7 +22,7 @@ import java.util.Map;
 
 @Service
 public class CaptchaService {
-    
+
     private static final int CAPTCHA_WIDTH = 200, CAPTCHA_HEIGHT = 50;
     private static final Map<String, CaptchaCodeModel> captchaCodeMap = new HashMap<String, CaptchaCodeModel>();
 
