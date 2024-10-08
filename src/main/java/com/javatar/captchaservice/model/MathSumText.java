@@ -2,6 +2,7 @@ package com.javatar.captchaservice.model;
 
 import nl.captcha.text.producer.TextProducer;
 
+
 public class MathSumText implements TextProducer {
     private final String text;
     private final int answer;
