@@ -4,7 +4,6 @@ import lombok.Data;
 
 import java.util.concurrent.TimeUnit;
 
-
 @Data
 public class CaptchaCodeModel {
     private String answer;
