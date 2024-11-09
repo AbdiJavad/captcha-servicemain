@@ -1,5 +1,6 @@
 package com.javatar.captchaservice.controller;
 
+
 import com.javatar.captchaservice.model.CaptchaModel;
 import com.javatar.captchaservice.service.CaptchaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("captcha")
 public class CaptchaController {
-    
+
     @Autowired
     private CaptchaService captchaService;
 
