@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("captcha")
 public class CaptchaController {
-
     
     @Autowired
     private CaptchaService captchaService;
