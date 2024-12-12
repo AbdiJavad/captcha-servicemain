@@ -1,5 +1,6 @@
 package com.javatar.captchaservice.model;
 
+
 import lombok.Data;
 
 import java.util.concurrent.TimeUnit;
