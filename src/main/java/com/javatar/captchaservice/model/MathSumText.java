@@ -1,5 +1,6 @@
 package com.javatar.captchaservice.model;
 
+
 import nl.captcha.text.producer.TextProducer;
 
 public class MathSumText implements TextProducer {
